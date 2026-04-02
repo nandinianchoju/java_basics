@@ -1,0 +1,94 @@
+#program to find the sum of elements in an array
+
+class Arr1
+{
+public static void main(String args[])
+{
+int arr[]={10,20,30,40};
+int sum=0;
+for (int num:arr)
+{
+sum+=num;
+}
+System.out.println("sum=" + sum);
+}}
+
+
+# program to find the largest element in an array
+
+class Arr2
+{
+public static void main(String args[])
+{
+int arr[]={10,20,30,40};
+int max=arr[0];
+for (int i=1;i<arr.length;i++)
+{
+if(arr[i]>max)
+{
+max=arr[i];
+}}
+System.out.println("largest=" + max);
+}}
+
+#program to find the smallest element in an array
+
+class Arr3
+{
+public static void main(String args[])
+{
+int arr[]={10,20,30,40};
+int min=arr[0];
+for (int i=1;i<arr.length;i++)
+{
+if(arr[i]<min)
+{
+min=arr[i];
+}}
+System.out.println("smallest=" + min);
+}}
+
+#program to find the the elements in revesed order
+class Arr4
+{
+public static void main(String args[])
+{
+int a[]={10,20,30,40};
+System.out.println("reversed array");
+for (int i=a.length-1;i>=0;i--)
+{
+System.out.println(a[i]+ " ");
+}}}
+
+#program to copy elements of an array into another array
+
+class Arr5
+{
+public static void main(String args[])
+{
+int arr1[]={10,20,30,40};
+int arr2[]=new int[arr1.length];
+for (int i=0;i<arr1.length;i++)
+{
+arr2[i]=arr1[i];
+}
+System.out.println("copied array");
+for(int num:arr2)
+{
+System.out.println(num+ " ");
+}}}
+
+
+#to sort an array in ascending order
+import java.util.Arrays;
+class Ascending
+{
+public static void main(String args[])
+{
+int arr[]={50,20,10,40,30};
+Arrays.sort(arr);
+System.out.println("sorted array");
+for (int num:arr)
+{
+System.out.println(num+ " " );
+}}}

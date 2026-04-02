@@ -1,0 +1,70 @@
+-java programs-
+fibonacci
+class Fibonacci
+{
+public static void main(String args[])
+{
+int f1=0,f2=1,f3=i;
+System.out.println(f1);
+System.out.println(f2);
+for(int i=2;i<=8;i++)
+{
+f3=f1+f2;
+System.out.println( f3 );
+f1=f2;
+f2=f3;
+}}}
+
+gcd
+class B
+{
+public static int gcd(int a ,int b)
+{
+if(b==0)
+return a;
+else
+return gcd(b, a%b );
+}}
+class Gcd1
+{
+public static void main(String args [])
+{
+int a=4, b=8;
+int k=B.gcd(a,b);
+System.out.println("gcd of a and b is"+k);
+}}
+
+binary
+class Binary
+{
+public static void main(String args[])
+{
+int rem,b,j=1,bin=0,n=13;
+while(n>0)
+{
+rem=n%2;
+b=rem*j;
+bin=bin+b;
+j=j*10;
+n=n/2;
+}
+System.out.println("binary=" + bin);
+}}
+
+decimal
+class Decimal
+{
+public static void main(String args[])
+{
+int rem,d,j=1,dec=0,n=1101;
+while(n>0)
+{
+rem=n%10;
+d=rem*j;
+dec=dec+d;
+j=j*2;
+n=n/10;
+}
+System.out.println("decimal=" + dec);
+}}
+ 
